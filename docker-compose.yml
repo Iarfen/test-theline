@@ -1,6 +1,15 @@
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
+    app:
+        build:
+            context: ./
+        volumes:
+            - .:/var/www
+        ports:
+            - "8080:8080"
+        environment:
+            - APP_ENV=local
     laravel.test:
         build:
             context: ./vendor/laravel/sail/runtimes/8.0
