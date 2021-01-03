@@ -10,6 +10,10 @@
             body {
                 background-image: url('background.jpg');
             }
+            h1,p
+            {
+                color: #FFFFFF;
+            }
         </style>
     </head>
     <body>
